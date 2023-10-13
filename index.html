@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальная открытка</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFDAB9;
+        }
+
+        .card {
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF6347;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #FF4500;
+        }
+        p {
+    font-family: 'Arial', sans-serif;
+    color: #5B3A70; /* темно-фиолетовый текст */
+    background-color: #FBEAFF; /* нежно-розовый фон */
+    padding: 20px; /* добавим отступ внутри для комфортного чтения */
+    border-radius: 10px; /* скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* небольшая тень для объемности */
+    line-height: 1.6; /* регулировка расстояния между строками для удобства чтения */
+    text-align: center; /* выравнивание текста по центру */
+    max-width: 80%; /* ограничиваем максимальную ширину, чтобы текст не тянулся на всю ширину экрана */
+    margin: 20px auto; /* центрирование блока по горизонтали и вертикали */
+}
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>С Днем Рождения!</h1>
+        <p>🌸 Алина 🌸<br><br>
+        Дорогая Алина! Поздравляю тебя с этим замечательным днем! Пусть в твоей жизни будет столько радости, сколько звёзд на небе, а каждый день дарит улыбки, тепло и любовь. Желаю, чтобы твои мечты сбывались одна за другой, а рядом всегда были верные друзья и близкие. Оставайся такой же яркой, неповторимой и вдохновляющей!<br><br>С наилучшими пожеланиями, твои Берлины:)</p>
+        <button onclick="playMusic()">► Воспроизвести музыку</button>
+    </div>
+    <audio id="birthdaySong" src="path_to_your_song.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            const audio = document.getElementById("birthdaySong");
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>
